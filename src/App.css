@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+#video{
+    position: absolute;        
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 50rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#shopifylogo{
+    height: 2.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+    background-color: rgb(0, 0, 0, 1);
+    height: 4.5rem;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homeimage:hover{
+    .navbar{
+        background-color: rgb(0, 0, 0, 0);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.navlist{
+    color: white;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navarrow{
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+}
+
+#playbutton{
+    margin-right: 1rem;
+}
+
+.cardimg{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#forwardicon{
+    color: white;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.cards:hover{
+    #forwardicon{
+        color: black;
+        margin-left: 0.5rem;
+    }
+}
+
+#startselling{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#arrow1, #arrow2, #arrow3, #arrow4{
+    margin-left: 0.3rem;
+    font-size: 1.3rem;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+#box1:hover{
+    #arrow1{
+        margin-left: 0.7rem;
+    }
+    button{
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+#box2:hover{
+    #arrow2{
+        margin-left: 0.7rem;
+    }
+    button{
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+#box3:hover{
+    #arrow3{
+        margin-left: 0.7rem;
+    }
+    button{
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+#box4:hover{
+    #arrow4{
+        margin-left: 0.7rem;
+    }
+    button{
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+#logoicon{
+    font-size: 3rem;
+}
+
+#footericons{
+    color: black;
+    font-size: 2rem;
+}
+
+#footericons:hover{
+    color: rgb(60,60,60);
+}
+
+#globe{
+    margin-right: 0.5rem;
+}
+
+#transitionlink{
+    text-decoration: none;
 }
